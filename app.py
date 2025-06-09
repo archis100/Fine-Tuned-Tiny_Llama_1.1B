@@ -9,7 +9,7 @@ prompt = st.text_input("💬 Enter your prompt:")
 if st.button("🚀 Generate Response"):
     with st.spinner("Generating response..."):
         response = requests.post(
-            "http://localhost:8000/infer",
+            "http://172.20.10.2:8000/infer",
             json={"prompt": prompt, "max_new_tokens": 100, "temperature": 0.7}
         )
         if response.status_code == 200:
