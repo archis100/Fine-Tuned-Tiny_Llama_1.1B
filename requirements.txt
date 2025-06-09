@@ -1,0 +1,10 @@
+git+https://github.com/huggingface/transformers
+peft
+accelerate
+bitsandbytes
+safetensors
+sentencepiece
+trl
+fastapi
+uvicorn
+torch
