@@ -3,7 +3,7 @@ peft
 accelerate
 bitsandbytes
 safetensors
-sentencepiece
+sentencepiece==0.1.99
 trl
 fastapi
 uvicorn
