@@ -1,0 +1,4 @@
+Tiny-Llama-1.1B-chat-finetune/
+__pycache__/
+*.pyc
+.env

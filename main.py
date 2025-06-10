@@ -6,9 +6,9 @@ import torch
 
 app = FastAPI()
 
-# === Load base model + LoRA ===
-base_model_id = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"  # or local path to your base model
-adapter_path = "./Tiny-Llama-1.1B-chat-finetune"     # path to your adapter folder
+# Load base model + LoRA 
+base_model_id = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"  # hugging face model id
+adapter_path = "./Tiny-Llama-1.1B-chat-finetune"     # path to the adapter folder
 
 # Load tokenizer and base model
 tokenizer = AutoTokenizer.from_pretrained(base_model_id, use_fast=True)
